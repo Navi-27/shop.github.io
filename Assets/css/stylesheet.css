@@ -1,0 +1,118 @@
+body{
+    
+    background:#000000 ;
+
+}
+.txt-gradient{
+    background: #566a7f;
+    background: linear-gradient(#7c7c7c); 
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #fff;
+    color: #fff;
+    font-family: "Quicksand", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: <weight>;
+    font-style: normal;}
+
+/* .producto:hover{
+    -webkit-text-fill-color: #7c7c7c;
+    color: #fff;
+    border-radius:15px 15px 15px 15px;
+    box-shadow: 0px -1px 20px #fff;
+    transform: scale(1.05);
+    -webkit-transition: all 200ms ease-out;
+    -moz-transition: all 200ms ease-out;
+    -ms-transition: all 200ms ease-out;
+    -o-transition: all 200ms ease-out;
+    transition: all 200ms ease-out;
+} */
+
+.txt-car{
+    border: 5px solid #7c7c7c;
+    border-radius:15px 15px 15px 15px;
+    height: 430px;
+    width: 1300px;
+}
+
+.container-fluid,.offcanvas-body{
+    background: #292929 ;
+    border: none color #7c7c7c;
+}
+
+.navbar-toggler-icon{
+    border-color: #efefef;
+}
+
+.ret{
+    width: 250px;
+    height: 50px;
+}
+
+.b1 button{
+    position: center;
+    width: auto;
+    height: auto;
+    color: #fff;
+    padding: 0px 0px;
+    border-radius: 5px;
+    border: 1px;
+    background-color: #525252;
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: all .5s ease;
+    box-shadow: #566a7f;
+}
+/* .b1 button:hover{
+    background-color: #525252;
+    color: #fff;
+    box-shadow: #566a7f;
+}
+.b1 button:active{
+    background: #525252;
+    color: #fff;
+    box-shadow: #fff;
+    transform: translateY(-10px);
+    transition: 100ms; */
+}
+
+.d-flex img{
+    width: auto;
+    height: auto;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.bt2{
+    position: center;
+    width: 200px;
+    height: 30px;
+    color: #fff;
+    border: #fff;
+    margin: 5px 3px 5px;
+    padding: 0px 0px;
+    border-radius: 5px;
+    border: 1px;
+    background-color: rgb(0 28 56);
+    text-transform: uppercase;
+    font-size: 18px;
+    transition: all .5s ease;
+    box-shadow: #566a7f;
+}
+.bt2:hover{
+    background-color: rgb(0 86 179);
+    color: #fff;
+    box-shadow: #ffffff;
+}
+.bt2:active{
+    background: rgb(0 86 179);
+    color: #fff;
+    box-shadow: #ffffff;
+    transform: translateY(-10px);
+    transition: 100ms;
+}
+div img{
+    background-size: contain;
+    background-position: center;
+    max-height: fit-content;
+    max-height: 250px;
+}
