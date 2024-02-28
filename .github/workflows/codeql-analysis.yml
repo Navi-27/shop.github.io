@@ -14,7 +14,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        language: [javascript, python] # Puedes agregar aquí los lenguajes de programación que utilizas en tu proyecto
+        language: [php, html, css] # Puedes agregar aquí los lenguajes de programación que utilizas en tu proyecto
 
     steps:
     - name: Initialize CodeQL
