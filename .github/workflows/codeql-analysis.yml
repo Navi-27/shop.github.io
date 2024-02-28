@@ -1,0 +1,35 @@
+name: CodeQL Analysis
+
+on:
+  push:
+    branches: [main] # Puedes cambiar esto según las ramas que deseas analizar
+  pull_request:
+    branches: [main] # Puedes cambiar esto según las ramas que deseas analizar
+
+jobs:
+  analyze:
+    name: Analyze with CodeQL
+    runs-on: ubuntu-latest
+
+    strategy:
+      fail-fast: false
+      matrix:
+        language: [javascript, python] # Puedes agregar aquí los lenguajes de programación que utilizas en tu proyecto
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Initialize CodeQL
+      uses: github/codeql-action/init@v1
+
+    - name: Autobuild
+      uses: github/codeql-action/autobuild@v1
+      with:
+        languages: ${{ matrix.language }}
+
+    - name: Analyze
+      uses: github/codeql-action/analyze@v1
+      with:
+        languages: ${{ matrix.language }}
+        query: . # Puedes especificar la ruta a tus consultas de CodeQL si las tienes en una carpeta específica
