@@ -12,7 +12,7 @@ jobs:
     runs-on: ubuntu-latest
 
     strategy:
-      fail-fast: false
+      fail-fast: true
       matrix:
         language: [php, html, css] # Puedes agregar aquí los lenguajes de programación que utilizas en tu proyecto
 
