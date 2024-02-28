@@ -10,7 +10,7 @@ jobs:
 
     strategy:
       matrix:
-        language: [javascript, python, java] # Puedes agregar aquí los lenguajes de programación que utilizas en tu proyecto
+        language: [php, html, css] # Puedes agregar aquí los lenguajes de programación que utilizas en tu proyecto
 
     steps:
     - name: Checkout repository
